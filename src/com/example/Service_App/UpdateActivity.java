@@ -2,6 +2,8 @@ package com.example.Service_App;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -41,21 +43,38 @@ public class UpdateActivity extends Activity {
         ArrayAdapter<String> RoadAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, RoadArray);
         ArrayAdapter<String> TypeAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, TypeArray);
         ArrayAdapter<String> SpeedAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, SpeedArray);
-
+        CountyArray.add("Select County List");
         CountyArray.add("Dublin");
         CountyArray.add("Galway");
         CountyArray.add("Mayo");
-
+        RoadArray.add("Select Road Type List");
         RoadArray.add("National Route");
         RoadArray.add("Motorway Regional");
         RoadArray.add("Regional Route");
 
+        road.setClickable(false);
         countyAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         RoadAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         county.setAdapter(countyAdapter);
+        road.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (county.getSelectedItem().toString() == "Select County List"){
+                    road.setClickable(false);
+                road.setSelection(0);
+            }
+            else {
+                road.setClickable(true);
+            }
+                return false;
+            }
+        });
+
+
         road.setAdapter(RoadAdapter);
 
     }// onCreate
+
 
 }// ActivityMain
