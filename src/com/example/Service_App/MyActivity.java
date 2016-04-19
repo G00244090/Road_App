@@ -38,6 +38,8 @@ public class MyActivity extends Activity implements OnClickListener {
             Toast.makeText(this, "Make Selections to checkspeed SpeedLimit", Toast.LENGTH_LONG).show();
             Button btn2 = (Button) findViewById(R.id.Send);
             btn2.setEnabled(true);
+            Intent id = new Intent(MyActivity.this, CheckActivity.class);
+            startActivity(id);
 
 
         } else if (v.getId() == R.id.Send) {

@@ -7,7 +7,10 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.*;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Spinner;
+import android.widget.TextView;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -198,7 +201,7 @@ public class UpdateActivity extends Activity {
                 sharededit.putString("num3", num3);
                 sharededit.putString("num4", num4);
                 sharededit.commit();
-                String baseUrl = "http://192.168.1.110:8080/maths-server";
+                String baseUrl = "http://192.168.1.110:27";
                 JSONObject inputsJson = new JSONObject();
                 //jsonObject.accumulate("name", person.getName());
                 try {
