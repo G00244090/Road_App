@@ -46,17 +46,17 @@ public class CheckActivity extends Activity {
         broadcast = (Button) findViewById(R.id.button);
 
         String[] dummy = new String[]{"N/A"};
-        String[] dublinNat = new String[]{"N58", "N59", "N60", "N58"};
-        String[] dublinMot = new String[]{"m58", "m59", "m60", "m58"};
-        String[] dublinReg = new String[]{"r58", "r59", "r60", "r58"};
+        String[] dublinNat = new String[]{"D", "N58", "N59", "N60", "N83","N84"};
+        String[] dublinMot = new String[]{"D", "M1", "M2", "M3", "M4", "M50"};
+        String[] dublinReg = new String[]{"D", "R125", "R126", "R130", "R145", "R150"};
 
-        String[] galwayNat = new String[]{"N58", "N59", "N60", "N58"};
-        String[] galwayMot = new String[]{"m58", "m59", "m60", "m58"};
-        String[] galwayReg = new String[]{"r58", "r59", "r60", "r58"};
+        String[] galwayNat = new String[]{"G",  "N18", "N60", "N66","N67","N59"};
+        String[] galwayMot = new String[]{"G", "M6", "M7", "M8", "M9"};
+        String[] galwayReg = new String[]{"G", "R333", "R337", "R336", "R339", "R346"};
 
-        String[] mayoNat = new String[]{"N58", "N59", "N60", "N58"};
-        String[] mayoMot = new String[]{"m58", "m59", "m60", "m58"};
-        String[] mayoReg = new String[]{"r58", "r59", "r60", "r58"};
+        String[] mayoNat = new String[]{"Mo", "N58", "N59", "N60", "N83", "N84"};
+        String[] mayoMot = new String[]{"Mo", "M6", "M7", "M8", "M9"};
+        String[] mayoReg = new String[]{"Mo", "R326", "R328", "R329", "R330","R320","R325"};
 
 
         List<String> CountyArray = new ArrayList<String>();

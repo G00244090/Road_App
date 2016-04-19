@@ -24,22 +24,22 @@ public class popup extends Activity {
         if (extras != null) {
              value = extras.getString("Speed");
         }
-        if(value.contains("30 km/h")) {
+        if(value.contains("30 Km/h")) {
             Speed.setImageResource(R.drawable.thirty);
         }
-        else if(value.contains("50 km/h")) {
+        else if(value.contains("50 Km/h")) {
             Speed.setImageResource(R.drawable.fifty);
         }
-        else if(value.contains("60 km/h")) {
+        else if(value.contains("60 Km/h")) {
             Speed.setImageResource(R.drawable.sixty);
         }
-        else if(value.contains("80 km/h")) {
+        else if(value.contains("80 Km/h")) {
             Speed.setImageResource(R.drawable.eighty);
         }
-        else if(value.contains("100 km/h")) {
+        else if(value.contains("100 Km/h")) {
             Speed.setImageResource(R.drawable.onehun);
         }
-        else if(value.contains("120 km/h")) {
+        else if(value.contains("120 Km/h")) {
             Speed.setImageResource(R.drawable.onetwen);
         }
 

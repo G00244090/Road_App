@@ -19,7 +19,7 @@ public class MyActivity extends Activity implements OnClickListener {
 
         findViewById(R.id.Check).setOnClickListener(this);
         findViewById(R.id.Update).setOnClickListener(this);
-        findViewById(R.id.Send).setOnClickListener(this);
+
     }
 
 
@@ -36,13 +36,10 @@ public class MyActivity extends Activity implements OnClickListener {
         } else if (v.getId() == R.id.Check) {
 
             Toast.makeText(this, "Make Selections to checkspeed SpeedLimit", Toast.LENGTH_LONG).show();
-            Button btn2 = (Button) findViewById(R.id.Send);
-            btn2.setEnabled(true);
+
             Intent id = new Intent(MyActivity.this, CheckActivity.class);
             startActivity(id);
 
-
-        } else if (v.getId() == R.id.Send) {
 
         }
     }
